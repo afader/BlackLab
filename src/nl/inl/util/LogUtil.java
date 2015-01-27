@@ -100,9 +100,9 @@ public class LogUtil {
 			ConsoleAppender consoleAppender = new ConsoleAppender();
 			//consoleAppender.setLayout(new PatternLayout("%r [%t] %p %c %x - %m%n"));
 			consoleAppender.setLayout(new PatternLayout("%8r [%t] %-35c{2} %x %-5p %m%n"));
-			consoleAppender.setTarget("System.out");
-			consoleAppender.setThreshold(level);
-			consoleAppender.activateOptions();
+			//consoleAppender.setTarget("System.out");
+			//consoleAppender.setThreshold(level);
+			//consoleAppender.activateOptions();
 			Logger.getRootLogger().addAppender(consoleAppender);
 		}
 	}
